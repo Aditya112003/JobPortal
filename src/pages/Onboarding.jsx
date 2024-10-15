@@ -17,7 +17,6 @@ const Onboarding = () => {
     await user
       .update({ unsafeMetadata: { role } })
       .then(() => {
-        console.log(`Role updated to: ${role}`);
         navigateUser(role);
       })
       .catch((err) => {

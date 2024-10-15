@@ -41,9 +41,7 @@ const ApplicationCard = ({ application, isCandidate = false }) => {
   const handleStatusChange = (status) => {
     setUpdatingStatus(true);
     fnHiringStatus(status)
-      .then(() => {
-        // Optionally, you can add logic to refresh the application status
-      })
+      .then(() => fnHiringStatus())
       .catch((err) => {
         setError("Failed to update status");
         console.error(err);

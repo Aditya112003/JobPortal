@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useUser } from "@clerk/clerk-react";
 import { Navigate, useLocation } from "react-router-dom";
-import { BarLoader } from "react-spinners"; // Optional: For loading state
+import { BarLoader } from "react-spinners"; 
 
 const ProtectedRoute = ({ children }) => {
   const { isSignedIn, user, isLoaded } = useUser();
   const { pathname } = useLocation();
 
-  // Show loader while user data is being loaded
+ 
   if (!isLoaded) {
     return (
       <div className="flex justify-center items-center h-screen">

@@ -24,7 +24,7 @@ const JobCard = ({
   isMyJob = false,
 }) => {
   const [saved, setSaved] = useState(savedInit);
-  const { user } = useUser(); // Get user from Clerk
+  const { user } = useUser();
 
   const { loading: loadingDeleteJob, fn: fnDeleteJob } = useFetch(deleteJob, {
     job_id: job.id,
@@ -55,9 +55,7 @@ const JobCard = ({
     if (savedJob !== undefined) setSaved(savedJob?.length > 0);
   }, [savedJob]);
 
-  // Determine if the user is a recruiter based on their role
-  const userRole = user?.unsafeMetadata?.role; // Adjust this to your actual metadata structure
-  console.log(userRole);
+  const userRole = user?.unsafeMetadata?.role;
 
   return (
     <Card className="flex flex-col">
@@ -90,9 +88,9 @@ const JobCard = ({
       <CardFooter className="flex gap-2">
         <Link
           to={
-            userRole === "recruiter" // Check if the user is a recruiter
-              ? `/applications/${job.id}` // Redirect to applications page for recruiters
-              : `/job/${job.id}` // Redirect to job details page for candidates
+            userRole === "recruiter"
+              ? `/applications/${job.id}`
+              : `/job/${job.id}`
           }
           className="flex-1"
         >

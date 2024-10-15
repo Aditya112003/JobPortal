@@ -5,14 +5,14 @@ import { useUser } from "@clerk/clerk-react";
 import MDEditor from "@uiw/react-md-editor";
 import { MapPinIcon } from "lucide-react";
 import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom"; // Import useNavigate for redirection
+import { useParams, useNavigate } from "react-router-dom"; 
 import { BarLoader } from "react-spinners";
 import { DoorClosed, DoorOpen, Briefcase } from "lucide-react";
 
 const Job = () => {
   const { isLoaded, user } = useUser();
   const { id } = useParams();
-  const navigate = useNavigate(); // Use useNavigate for redirection
+  const navigate = useNavigate(); 
 
   const {
     loading: loadingJob,
@@ -25,8 +25,6 @@ const Job = () => {
   useEffect(() => {
     if (isLoaded) {
       const role = user?.unsafeMetadata?.role;
-
-      console.log("Role = ", role);
 
       // If the user is a recruiter, redirect to the "/my-jobs" page
       if (role === "recruiter") {

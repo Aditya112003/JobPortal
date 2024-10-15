@@ -8,10 +8,10 @@ import {
   useUser,
 } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
-import { BriefcaseBusiness, Save, ClipboardCheck, Search } from "lucide-react"; // Add icons
+import { BriefcaseBusiness, Save, ClipboardCheck, Search } from "lucide-react"; 
 
 const Header = () => {
-  const { user } = useUser(); // Get user info
+  const { user } = useUser(); 
   const [showSignIn, setShowSignIn] = useState(false);
   const [search, setSearch] = useSearchParams();
 
@@ -32,7 +32,7 @@ const Header = () => {
   const isCandidate = user?.unsafeMetadata?.role === "candidate";
   const isRecruiter = user?.unsafeMetadata?.role === "recruiter";
 
-  // Prepare menu items conditionally
+
   const menuItems = [];
 
   if (isRecruiter) {
@@ -40,13 +40,13 @@ const Header = () => {
       <UserButton.Link
         key="post-jobs"
         label="Post Jobs"
-        labelIcon={<BriefcaseBusiness size={15} />} // Icon for Post Jobs
+        labelIcon={<BriefcaseBusiness size={15} />} 
         href="/post-job"
       />,
       <UserButton.Link
         key="created-jobs"
         label="Created Jobs"
-        labelIcon={<ClipboardCheck size={15} />} // Icon for Created Jobs
+        labelIcon={<ClipboardCheck size={15} />} 
         href="/my-jobs"
       />
     );
@@ -57,13 +57,13 @@ const Header = () => {
       <UserButton.Link
         key="explore-jobs"
         label="Explore Jobs"
-        labelIcon={<Search size={15} />} // Icon for Explore Jobs
+        labelIcon={<Search size={15} />} 
         href="/jobs"
       />,
       <UserButton.Link
         key="saved-jobs"
         label="Saved Jobs"
-        labelIcon={<Save size={15} />} // Icon for Saved Jobs
+        labelIcon={<Save size={15} />} 
         href="/saved-jobs"
       />
     );
@@ -110,7 +110,7 @@ const Header = () => {
               }}
             >
               <UserButton.MenuItems>
-                {menuItems} {/* Render prepared menu items */}
+                {menuItems} 
               </UserButton.MenuItems>
             </UserButton>
           </SignedIn>

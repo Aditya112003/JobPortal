@@ -1,4 +1,4 @@
-import CreatedJobs from "@/components/CreatedJobs"; // For displaying recruiter's jobs
+import CreatedJobs from "@/components/CreatedJobs"; 
 import { useUser } from "@clerk/clerk-react";
 import { BarLoader } from "react-spinners";
 

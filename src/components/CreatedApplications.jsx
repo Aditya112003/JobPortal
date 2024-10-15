@@ -21,7 +21,6 @@ const CreatedApplications = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Loader with additional margin and height
   if (loadingApplications) {
     return (
       <div className="flex justify-center items-center my-8">
