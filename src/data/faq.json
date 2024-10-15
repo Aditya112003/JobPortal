@@ -1,0 +1,31 @@
+[
+  {
+    "question": "What is SimplyHire?",
+    "answer": "SimplyHire is a comprehensive job portal that enables companies to post job listings and helps job seekers find and apply for jobs with ease. The platform offers intuitive interfaces, powerful search tools, and secure authentication for both employers and candidates."
+  },
+  {
+    "question": "How do I post a job as an employer?",
+    "answer": "Employers can post job listings by logging into their account, navigating to the 'Post Job' section, and filling out the required job details. Once submitted, the job listing will be live on the platform."
+  },
+  {
+    "question": "How can I search for job opportunities?",
+    "answer": "Job seekers can use SimplyHire’s advanced search filters to browse jobs by keywords, location, job type, and more. The search functionality is available on the homepage or through the dedicated job search page."
+  },
+  {
+    "question": "How do I apply for a job?",
+    "answer": "To apply for a job, simply click on the listing you’re interested in, and follow the application instructions. You will likely need to upload your resume and complete a short application form."
+  },
+  {
+    "question": "Can I save job listings to apply later?",
+    "answer": "Yes, you can save jobs by clicking the 'Save Job' button on the listing. All your saved jobs can be found in your profile under the 'Saved Jobs' section for easy access later."
+  },
+  {
+    "question": "How do I track my job applications?",
+    "answer": "You can track the status of your job applications through the 'My Applications' section in your profile. Here, you’ll see updates on the status of each application you’ve submitted."
+  },
+
+  {
+    "question": "How secure is my personal information on SimplyHire?",
+    "answer": "SimplyHire takes the privacy and security of its users very seriously. All personal data is protected using the latest encryption methods, and we never share your information without your consent."
+  }
+]
