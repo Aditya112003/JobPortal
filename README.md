@@ -104,7 +104,7 @@ npm install
 ```
 VITE_SUPABASE_URL= your supabase url 
 VITE_SUPABASE_ANON_KEY= your_supabase_key
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_api_key
+VITE_CLERK_PUBLISHABLE_KEY= your_clerk_api_key
 ```
 
 5. **Run the development server**:
